@@ -1,5 +1,5 @@
 .mainSec {
-  width: 100%;
+  width: 80%;
   background-color: var(--main-bg);
   z-index: 1;
 }
@@ -204,6 +204,7 @@
     margin-top: 10px;
   }
 
+
   .mainSec .ticketInfo .info span:last-child {
     padding: 0.3rem 0.4rem;
     font-size: 0.7rem;
@@ -212,6 +213,6 @@
     display: none;
   }
   .mainSec .ticketInfo .info span {
-    font-size: 13px !important;
+    font-size: 11px !important;
   }
 }

@@ -1,5 +1,5 @@
 .sideBar {
-  width: 297px;
+  width: 249px;
   padding: 1.2rem 1.4rem;
   background-color: var(--neutral-100);
   height: 100vh;
@@ -9,6 +9,10 @@
   box-shadow: 10px 0 24px -23px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
   z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
 }
 .sideBar .logo {
   width: 155px;
@@ -68,6 +72,10 @@
   .arrowImg {
     display: none;
   }
+  .sideBar {
+    padding: 0.5rem;
+    width: 95px;
+  }
 }
 @media (max-width: 580px) {
   .tapName {
@@ -80,7 +88,5 @@
   .sideBarList li img {
     margin: auto;
   }
-  .sideBar {
-    padding: 0.5rem;
-  }
+ 
 }

@@ -24,4 +24,6 @@ body {
 .row {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: flex-end;
+
 }
