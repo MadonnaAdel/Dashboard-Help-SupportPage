@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #266f76;
+  --neutral-500: #2c2c2c;
+  --neutral-400: #4a4a4a;
+  --neutral-300: #8e8e8e;
+  --neutral-200: #e8e8e8;
+  --neutral-100: #ffffff;
+  --main-bg: #f9fafb;
+  --menue: #90329c;
+  --status-menue: #90329c1a;
+  --resturant: #e87f1d;
+  --status-resturant: #e87f1d1b;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+}

@@ -1,0 +1,217 @@
+.mainSec {
+  width: 100%;
+  background-color: var(--main-bg);
+  z-index: 1;
+}
+.mainSec .mainContent {
+  margin-inline: 2.8rem;
+  margin-block: 1.2rem;
+}
+
+.mainSec .navStep {
+  color: var(--neutral-300);
+  font-weight: bold;
+  margin-left: 0.8rem;
+}
+.mainSec .navStep span {
+  color: var(--primary-color);
+}
+
+.mainSec .mainContentBody {
+  background-color: var(--neutral-100);
+  padding: 1.2rem 1.4rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+.mainSec .chatBoxHead .ticketId {
+  color: var(--neutral-400);
+}
+.mainSec .ticketInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--neutral-200);
+}
+.mainSec .ticketInfo .info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mainSec .ticketInfo .info span {
+  position: relative;
+  padding-right: 12px;
+  color: var(--neutral-400);
+  font-size: 0.9rem;
+}
+.mainSec .ticketInfo .info span:last-child {
+  background-color: var(--status-menue);
+  padding: 0.4rem 0.5rem;
+  border-radius: 0.3rem;
+  color: var(--menue);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.mainSec .ticketInfo .info span:last-child::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--menue);
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.mainSec .ticketInfo .info span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 18px;
+  background-color: var(--neutral-200);
+}
+.mainSec .ticketInfo .ticketAction {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mainSec .ticketInfo .ticketAction .pendingBtn {
+  padding: 0.6rem 1rem;
+  border-radius: 0.3rem;
+  background-color: var(--status-resturant);
+  color: var(--resturant);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.mainSec .ticketInfo .ticketAction .resolveBtn {
+  padding: 0.6rem 1rem;
+  border-radius: 0.3rem;
+  background-color: var(--primary-color);
+  color: var(--neutral-100);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.mainSec .chatContainer {
+  background-color: var(--main-bg);
+  padding: 1.2rem 1.4rem;
+  border-radius: 0.7rem;
+  margin-top: 1rem;
+  height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.message.left {
+  flex-direction: row;
+  text-align: left;
+}
+
+.message.right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 10px;
+  object-fit: cover;
+}
+
+.bubble {
+  max-width: 500px;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.left .bubble {
+  background-color: var(--neutral-100);
+  color: var(--neutral-500);
+}
+
+.right .bubble {
+  background-color: var(--primary-color);
+  color: var(--neutral-100);
+}
+
+.time {
+  font-size: 12px;
+  color: var(--neutral-400);
+  margin-top: 4px;
+}
+
+.message-block {
+  display: flex;
+  flex-direction: column;
+}
+.input-bar {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  background-color: var(--neutral-100);
+  border-radius: 10px;
+  border: 1px solid var(--neutral-200);
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.input-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 15px;
+  color: var(--neutral-400);
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.input-bar button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-bar button svg {
+  fill: var(--neutral-100);
+}
+@media (max-width: 768px) {
+  .ticketAction {
+    margin-top: 10px;
+  }
+
+  .mainSec .ticketInfo .info span:last-child {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.7rem;
+  }
+  .mainSec .ticketInfo .info span:last-child::before {
+    display: none;
+  }
+  .mainSec .ticketInfo .info span {
+    font-size: 13px !important;
+  }
+}

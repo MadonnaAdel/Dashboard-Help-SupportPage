@@ -1,0 +1,86 @@
+.sideBar {
+  width: 297px;
+  padding: 1.2rem 1.4rem;
+  background-color: var(--neutral-100);
+  height: 100vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  box-shadow: 10px 0 24px -23px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+.sideBar .logo {
+  width: 155px;
+}
+.sideBar .sideBarHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--neutral-200);
+}
+.sideBar .sideBarContent .sideBarList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+  display: flex;
+  gap: 0.2rem;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.sideBar .sideBarContent .sideBarList li {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sideBar .sideBarContent .sideBarList li {
+  color: var(--neutral-400);
+  font-weight: 400;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+.sideBar .sideBarContent .sideBarList li .sideBarTap {
+  display: flex;
+  align-items: center;
+}
+.sideBar .sideBarContent .sideBarList li .tapName {
+  margin-left: 1rem;
+}
+.sideBarList li.active {
+  background-color: var(--primary-color);
+  color: var(--neutral-100) !important;
+  border-radius: 0.5rem;
+}
+.sideBarItem.active svg {
+  color: white;
+}
+
+.sideBarItem svg {
+  color: #4a4a4a;
+}
+
+.sideBarList li.active .tapName {
+  color: var(--neutral-100) !important;
+}
+
+@media (max-width: 768px) {
+  .arrowImg {
+    display: none;
+  }
+}
+@media (max-width: 580px) {
+  .tapName {
+    display: none;
+  }
+  .sideBarList li {
+    padding: 1rem 0rem !important;
+    display: block !important;
+  }
+  .sideBarList li img {
+    margin: auto;
+  }
+  .sideBar {
+    padding: 0.5rem;
+  }
+}
