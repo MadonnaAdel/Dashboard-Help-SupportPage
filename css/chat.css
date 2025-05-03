@@ -182,6 +182,7 @@
   color: var(--neutral-400);
   border-radius: 8px;
   background-color: transparent;
+  width: 80%;
 }
 
 .input-bar button {
